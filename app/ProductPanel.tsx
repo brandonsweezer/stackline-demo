@@ -11,7 +11,7 @@ export default function ProductPanel({productDetails}: {productDetails: ProductD
             <hr />
             <div style={{display: 'flex', justifyContent: 'space-evenly', flexWrap: 'wrap', gap: 8}}>
                 {productDetails.tags?.map((tag) => 
-                    <button 
+                    <button key={tag}
                         style={{borderRadius: 4, backgroundColor: 'white', paddingTop: 4, paddingBottom: 4, paddingLeft: 16, paddingRight: 16}}
                     >
                         {tag}
